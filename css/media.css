@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.navbar {
+		background-color: #ffffff
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.navbar-toggler {
+		display: none;
+	}
+
+	.navbar {
+		background-color: transparent;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}

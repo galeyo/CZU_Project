@@ -1,0 +1,1 @@
+var mediaCond = window.matchMedia("(min-width: 992px)")

@@ -3,14 +3,14 @@
 		max-width: 720px;
 	}
 
-	.navbar {
-		background-color: #ffffff
-	}
 }
 
 @media screen and (min-width: 992px) {
 	.container {
 		max-width: 960px;
+	}
+	.navbar-logo {
+		color: rgba(89, 89, 89, 0.7);
 	}
 
 	.navbar-toggler {
@@ -19,6 +19,20 @@
 
 	.navbar {
 		background-color: transparent;
+	}
+
+	.navbar > .container {
+		flex-wrap: nowrap;
+	}
+
+	.nav-item a {
+		padding: 0.5rem 1rem;
+	}
+
+	.navbar-list-link {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
 	}
 }
 

@@ -37,34 +37,31 @@ html {
 	padding: 0.5rem 1rem;
 	display: flex;
 	align-items: center;
+	background-color: #ffffff;
+	transition: all 0.5s;
 }
 
 .navbar>.container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 
 .navbar-logo {
 	font-weight: bold;
 	text-transform: uppercase;
-	color: rgba(89, 89, 89, 0.7);
+	color: #f05f40;
 	font-size: 1.25rem;
 	white-space: nowrap;
 	padding: 0.5rem;
 	margin-right: 1rem;
 }
-.navbar-toggler {
-	padding: 0.25rem 0.75rem;
-	line-height: 0;
-	font-size: 1.25rem;
-	background-color: transparent;
-	border: 1px solid rgba(89, 89, 89, 0.7);
-	border-radius: 0.25rem;
-}
 
 .navbar-list-link {
+	display: none;
+}
+.nav-item {
 	display: flex;
 }
 
@@ -76,6 +73,28 @@ html {
 }
 .nav-item a:hover {
 	color: #ffffff;
+}
+
+/* Responsive navigation menu */
+.navbar-toggler {
+	padding: 0.25rem 0.75rem;
+	line-height: 0;
+	font-size: 1.25rem;
+	background-color: transparent;
+	border: 1px solid rgba(89, 89, 89, 0.7);
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+
+.responsive {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex-grow: 1;
+}
+
+.responsive > .nav-item a{
+	padding: 0.5rem 1rem;
 }
 
 /* Header styles */
@@ -102,7 +121,7 @@ html {
 .header-title-text {
 	text-transform: uppercase;
 	font-size: 4rem;
-	margin-bottom: 0.;
+	margin-bottom: 0;
 	font-weight: bold;
 	line-height: 1.2;
 	color: #f05f40;

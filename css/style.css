@@ -98,7 +98,8 @@ html {
 	padding: 0.5rem 1rem;
 }
 
-/* Header styles */
+/* Home page styles */
+/* Header */
 .header {
 	display: flex;
 	align-items: center;
@@ -157,7 +158,7 @@ html {
 	color: #ffffff;
 }
 
-/* Footer */
+/* Home page footer */
 .footer {
 	background-color: #f05f40;
 }
@@ -194,4 +195,82 @@ html {
 
 .e-mail:hover {
 	color: #ffffff;
+}
+
+/* Projects page styles */
+/* Navigation */
+.navbar-projects {
+	background-color: #ffffff !important; 
+}
+/* Header */
+.header-projects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+	margin-top: 3.25rem;
+	background-image: url(../img/bg-project-header.jpg);
+	min-height: 80px;
+	padding-top: 0;
+	padding-bottom: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header-projects-title {
+	color: rgba(89, 89, 89, 0.7);
+	font-size: 28px;
+}
+
+/* Main */
+
+.our-clients {
+	background-color: #f05f40;
+}
+.our-clients > .container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.our-clients-title {
+	flex-basis: 100%;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	padding: 0.5rem 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.our-clients-title::before {
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #ffffff;
+	margin-right: 10px;
+}
+
+.our-clients-title::after {
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #ffffff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.client-card {
+	display: flex;
+	flex-direction: column;
+	max-width: 30%;
+	padding: 0.5rem 1rem;
+}
+
+.client-card-logo {
+	background-color: grey;
+	height: 20vh;
+	margin-bottom: 20px;
 }

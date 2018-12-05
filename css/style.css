@@ -199,46 +199,54 @@ html {
 
 /* Projects page styles */
 /* Navigation */
-.navbar-projects {
-	background-color: #ffffff !important; 
-}
+
 /* Header */
 .header-projects {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 30vh;
-	margin-top: 3.25rem;
 	background-image: url(../img/bg-project-header.jpg);
-	min-height: 80px;
+	min-height: 150px;
 	padding-top: 0;
 	padding-bottom: 0;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.header-projects > .container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .header-projects-title {
+	display: flex;
+	justify-content: center;
 	color: rgba(89, 89, 89, 0.7);
 	font-size: 28px;
 }
 
 /* Main */
-
+/* Clients */
 .our-clients {
-	background-color: #f05f40;
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	padding-top: 8rem;
 }
 .our-clients > .container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	flex-wrap: wrap;
+	align-items: center;
 }
 
 .our-clients-title {
 	flex-basis: 100%;
-	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 1.25rem;
-	padding: 0.5rem 1rem;
+	text-align: center;
+	font-size: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -248,7 +256,7 @@ html {
 	content: '';
 	width: 20px;
 	height: 1px;
-	background-color: #ffffff;
+	background-color: #f05f40;
 	margin-right: 10px;
 }
 
@@ -256,21 +264,46 @@ html {
 	content: '';
 	width: 20px;
 	height: 1px;
-	background-color: #ffffff;
+	background-color: #f05f40;
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 10px;
 }
 
+.our-clients hr {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	min-width: 50px;
+	border: 3px solid #f05f40;
+	
+}
+
+.client-cards {
+	display: flex;
+	justify-content: space-around;
+}
 .client-card {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 	max-width: 30%;
 	padding: 0.5rem 1rem;
 }
 
 .client-card-logo {
-	background-color: grey;
-	height: 20vh;
-	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	min-height: 100px;
 }
+.client-card-logo img {
+	width: 100%;
+	height: auto;
+}
+
+.circle-logo {
+	padding-left: 37%;
+	padding-right: 37%;
+}
+
+/* Videos */
+

@@ -74,6 +74,11 @@
 		flex-direction: row;
 		justify-content: flex-end;
 	}
+	/* Project page styles */
+	/* Gallery */
+	.gallery-images {
+		grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+	}
 }
 
 @media screen and (min-width: 1200px) {

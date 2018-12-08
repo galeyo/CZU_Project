@@ -296,11 +296,13 @@ html {
 .client-card-logo {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	min-height: 150px;
 }
 .client-card-logo img {
-	width: 100%;
+	width: 80%;
 	height: auto;
+	text-align: center;
 }
 
 .circle-logo {

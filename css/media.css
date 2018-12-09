@@ -41,6 +41,7 @@
 	/* Clients */
 	.client-cards {
 		flex-direction: row;
+		align-items: flex-start;
 		justify-content: space-between;
 	}
 	.client-card {
@@ -77,6 +78,27 @@
 	/* Gallery */
 	.gallery-images {
 		grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+	}
+
+	/* Devices page styles */
+	/* Devices */
+	.thumbnail {
+		width: 50%;
+	}
+
+	.row {
+		flex-direction: row;
+		align-items: stretch;
+		margin-bottom: 0;
+	}
+
+	.row:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+
+	.content {
+		padding: 68px 56px 41px;
+		width: 50%;
 	}
 }
 

@@ -1,6 +1,6 @@
 //jshint esversion:6
-
-function changeNavClassName() {
+var buttonToggler = document.querySelector(".navbar-toggler");
+buttonToggler.onclick = function() {
 	var nav = document.querySelector(".navbar-list-link");
 	if (nav.className === "navbar-list-link") {
 		nav.className += " responsive";

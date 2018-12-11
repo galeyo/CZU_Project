@@ -623,7 +623,6 @@ html {
 .profiles {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 }
 .profiles hr {
 	margin: 0;
@@ -633,6 +632,7 @@ html {
 .profile-left, .profile-right {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	width: 100%;
 	height: 50%;
 }
@@ -648,16 +648,81 @@ html {
 .right {
 	grid-column: 1;
 }
+.top-img {
+	margin-top: 20px;
+	border-radius: 50%;
+}
+.bottom-img {
+	align-self: end;
+}
+
 .top-img, .bottom-img {
-	background-color: grey;
+	width: 100%;
+	height: auto;
 }
 .profile-title {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin-bottom: 2rem;
 }
-.profile-text {
+
+.profile-properties {
+	display: flex;
+	flex-direction: column;
+	min-height: 125px;
+}
+.profile-properties li {
+	margin-bottom: 20px;
+}
+
+.profile-summary {
 	color: #6c757d;
 	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+/* Contacts page style */
+.contacts {
+	display: flex;
+}
+
+.contacts hr {
+	margin: 0;
+	border: 3px solid #f05f40;
+}
+.contacts-address {
+	padding-top: 2rem;
+}
+.contacts-address, .map {
+	padding-left: 2rem;
+	width: 50%;
+}
+.contact-link {
+	margin-left: 2rem;
+	font-size: 1.25rem;
+}
+.contact-email, .contact-tel {
+	display: flex;
+	padding: 0 8rem;
+	align-items: center;
+}
+
+.contact-email-title, .contact-tel-title {
+	font-size: 1.25rem;
+	line-height: 2.5;
+}
+
+/* Google Maps */
+.mapouter {
+	text-align: right;
+	height: 500px;
+	width: 600px;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	height: 500px;
+	width: 600px;
 }
 

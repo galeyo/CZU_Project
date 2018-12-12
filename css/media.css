@@ -122,6 +122,15 @@
 		width: 50%;
 		height: auto;
 	}
+	/* Contacts page styles */
+	.contacts-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.contacts-section-hr {
+	display: none;
+	}
 }
 
 @media screen and (min-width: 1200px) {

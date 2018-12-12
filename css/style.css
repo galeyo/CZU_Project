@@ -695,13 +695,28 @@ html {
 	flex-direction: column;
 	height: 100%;
 }
+.contacts-title {
+	padding-top: 2rem;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+}
+.contacts-title-hr {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	min-width: 50px;
+	border: 3px solid #f05f40;
+}
 
-.contacts hr {
+.contacts-section-hr {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	width: 100%;
 	border: 3px solid #f05f40;
 }
+
 .contacts-address, .map {
 	display: flex;
 	flex-direction: column;
@@ -717,7 +732,7 @@ html {
 	display: flex;
 	margin-bottom: 20px;
 }
-.contact-info > h4 {
+.contact-info > span {
 	font-size: 1.25rem;
 	font-weight: bold;
 }
@@ -742,6 +757,10 @@ html {
 	max-height: 500px;
 	max-width: 600px;
 }
+#gmap_canvas {
+	border: 0;	
+}
+
 .body-contact {
 	min-width: 600px;
 }

@@ -118,6 +118,10 @@
 		font-size: 2rem;
 		margin: 2rem 0;
 	}
+	.top-img, .bottom-img {
+		width: 50%;
+		height: auto;
+	}
 }
 
 @media screen and (min-width: 1200px) {
